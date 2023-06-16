@@ -38,4 +38,9 @@ public:
 		top--; //step 3 decrement
 	}
 
+	//method for check is data is empty
+	bool empty() {
+		return (top == -1);
+	}
+
 };
