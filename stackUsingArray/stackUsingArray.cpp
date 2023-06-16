@@ -15,5 +15,9 @@ public:
 	}
 
 	int push(int element) {
+		if (top == 4) { //step 1
+			cout << "Number of data excedeed the list." << endl;
+			return 0;
+		}
 	}
 };
