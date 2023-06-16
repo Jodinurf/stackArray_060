@@ -57,5 +57,37 @@ public:
 
 int main() {
 	StackArray obj;
+	while (true) {
+		cout << "\nMenu" << endl;
+		cout << "1. Push" << endl;
+		cout << "2. Pop" << endl;
+		cout << "3. Display" << endl;
+		cout << "4. Exit" << endl;
+		cout << "\nEnter your choice (1-4): ";
+		char ch;
+		cin >> ch;
+		switch (ch) {
+		case '1': {
+			int element;
+			cout << "enter the element : ";
+			cin >> element;
+			obj.push(element);
+			break;
+		}
+		case '2': {
+			obj.pop();
+			break;
+		}
+		case '3': {
+			obj.display();
+			break;
+		}
+		case '4': {
+			return 0;
+		}
+
+		}
+	}
 	
+	return 0;
 }
